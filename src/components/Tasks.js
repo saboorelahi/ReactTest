@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Task from './Task';
 
 // Assumption: We don't need to clear local storage on page refresh!
 const Tasks = () => {
@@ -13,8 +14,8 @@ const Tasks = () => {
   return (
     <div>
       <div>
-        {tasks.map(({ id, name }) => (
-          <ul key={id}>{name}</ul>
+        {tasks && tasks.map(({ id, name }) => (
+          <Task key={id} name={name} />
         ))}
       </div>
     </div>

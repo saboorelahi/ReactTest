@@ -9,6 +9,7 @@ const Navbar = () => {
       <Link to="/create-task">Create Task</Link>
 			<br />
       <Link to="/bulk-delete">Delete Tasks</Link>
+      <br />
     </div>
   );
 };
